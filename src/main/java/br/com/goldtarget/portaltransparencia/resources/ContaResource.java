@@ -24,11 +24,10 @@ public class ContaResource {
 	@Autowired
 	private ContaRepository contaRepository;
 	
-	@GetMapping
-	public List<Conta> listarTodos(){
-		return contaRepository.findAll();
-		
-	}
+	//@GetMapping
+	//public List<Conta> listarTodos(){
+	//	return contaRepository.findAll();
+	//}
 	
 	@GetMapping
 	public Conta buscarPeloCodigo(@PathVariable Long codigo) {
